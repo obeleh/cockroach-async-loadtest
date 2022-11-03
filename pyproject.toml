@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cockroach-python"
+version = "0.1.0"
+description = ""
+authors = ["Sjuul Janssen <sjuul.janssen@kevin.eu>"]
+readme = "README.md"
+packages = [{include = "cockroach_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^1.4.42"
+asyncpg = "^0.27.0"
+greenlet = "^2.0.0"
+sqlalchemy-cockroachdb = "^1.4.4"
+psycopg2-binary = "^2.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
